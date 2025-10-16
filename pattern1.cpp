@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int row,col;
+    int i,n;
+    cout<<"Enter any number:"<<endl;
+    cin>>n;
+    for(row=1;row<=n;row++)
+    { 
+        for(col=1;col<=row;col++)
+        {
+            cout<<col;
+        }
+        cout<<endl;
+    }
+}

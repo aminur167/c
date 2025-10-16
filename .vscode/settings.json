@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "cmath": "c",
+        "math.h": "c",
+        "iomanip": "cpp",
+        "ostream": "cpp"
+    }
+}
