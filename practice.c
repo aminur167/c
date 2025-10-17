@@ -1,9 +1,16 @@
+
 #include<stdio.h>
-#include<string.h>
 int main()
 {
-    char a[10];
-    fgets(a,5,stdin);
-    printf("%s\n",a);
-    return 0;
+    int n,col,row;
+    printf("Enter any number:");
+    scanf("%d",&n);
+    for(row=1;row<=n;row++)
+    {
+        for(col=1;col<=n-row;col++)
+        {
+            printf(" %d",col);
+        }
+        printf("\n");
+    }
 }
