@@ -1,17 +1,20 @@
-#include<stdio.h>
-int main()
-{
-    int n,sum=0,temp,remainder;
-    printf("Enter any number:");
-    scanf("%d",&n);
-    temp=n;
-    while(temp!=0)
-    {
-        remainder=temp%10;
-        sum=sum*10+remainder;
-        temp=temp/10;
-    }
-    printf("Sum of digit is : %d\n",sum);
+﻿#include <stdio.h>
 
+// fibonacci series using loop
+int main() {
+    int n, i;
+    long long a = 0, b = 1, next;
+
+    printf("How many terms? ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+    for (i = 0; i < n; i++) {
+        printf("%lld ", a);
+        next = a + b;
+        a = b;
+        b = next;
+    }
+    printf("\n");
     return 0;
 }
